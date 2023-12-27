@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the numbers</title>
+    
+</head>
+<style>
+    .headingpart h1 {
+    color: blueviolet;
+    text-align: center;
+}
+.headingpart h3{
+    color: rgb(12, 12, 133);
+    text-align: center;
+    
+}
+.formpart{
+    text-align: center;
+}
+#btn {
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#btn-2{
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#btn:hover {
+    background-color: rgb(62, 243, 128);
+    cursor: pointer;
+}
+#btn-2:hover{
+    background-color: rgb(234, 53, 53);
+    cursor: pointer;
+}
+.resultpart{
+    text-align: center;
+    color: rgb(139, 0, 231);
+}
+</style>
+<body>
+    <div class="headingpart">
+        <h1 class="A1">Number Guessing Game </h1>
+        <h3 class="A2">Try and guess a random number betwwen 1 and 1000.</h3>
+        <h3 class="A3">You have 10 attempts to guess the right number</h3>
+    </div>
+    <form class="formpart">
+        <label for="guessfield" id="guess">Guess a number:</label>
+        <input id="guessfield" type="text" placeholder="Enter your number" class="guessfield">
+        <button id="btn" type="submit">submit</button>
+        <button id="btn-2" type="submit">restart</button>
+    </form>
+    <div class="resultpart">
+      <h2>Previous Guessess: <span class="Guessess"></span> </h2>
+      <h2>Previous Remaining: <span class="Lastresult">10</span> </h2>
+      <h2>Your decision : <span class="decision"></span></h2>
+      <h2><span class="gameover"></span></h2>
+      <h2 class="gameoverline"></h2>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
